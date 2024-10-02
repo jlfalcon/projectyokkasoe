@@ -26,6 +26,7 @@ jobs:
             bucket: ${{ secrets.S3_BUCKET }}
             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: / *
+          if: github.ref == 'refs/heads/main'
             
         - name: Deploy STG
           uses: lbertenasco/s3-deploy@v1
@@ -34,3 +35,4 @@ jobs:
             bucket: ${{ secrets.STG_S3_BUCKET }}
             dist-id: ${{ secrets.STG_CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: / *
+          if: github.ref == 'refs/heads/develop'
