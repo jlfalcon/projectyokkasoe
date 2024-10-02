@@ -1,0 +1,98 @@
+{
+    "stats": {
+        "records":  865,
+        "online":   30,
+        "physical": 15,
+        "track":    5,
+        "hunting":  5
+    }, 
+
+    "overall_entries": [
+        {
+            "name": "Overall", 
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [60, 40, 90, 45, 70, 10, 80, 40, 50]
+        }, 
+        {
+            "name": "Online", 
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [110, 70, 50, 80, 100, 90, 120, 60, 20]
+        }, 
+        {
+            "name": "Physical", 
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [ 90, 100, 90, 80, 50, 60, 70, 80, 90 ]
+        }
+    ], 
+
+
+    "most_traded_products": {
+        "labels":       ["Live", "Dish", "Pieces", "Dead", "Liquid", "Whole" ], 
+        "values":       [ 760, 570, 475, 380, 285, 190],
+        "percents":     [ 40, 20, 15, 10, 10, 5],
+        "icons":       ["bird.png", "elephant.png", "pangolin.png", "deer.png", "tortoise.png", "bear.png"]
+    }, 
+
+
+    "type_of_unit": {
+        "labels":       ["Live", "Dish", "Pieces", "Dead", "Liquid", "Whole" ], 
+        "values":       [ 760, 570, 475, 380, 285, 190]
+    }, 
+
+
+    "total_by_taxonomy": {
+        "labels":   ["All", "Birds", "Mammals", "Reptiles", "Bird 1", "Bird 2", "Mammal 1", "Reptile 1", "Reptile 2", "Reptile 3"], 
+        "parents":  ["", "All", "All", "All", "Birds", "Birds", "Mammals", "Reptiles", "Reptiles", "Reptiles"], 
+        "values":   [ 0, 0, 0, 0, 10, 2, 6, 6, 1, 4 ]
+    }, 
+
+    "top_by_areas": [
+        { "name": "Area 1", "value": 910, "percent": 91  }, 
+        { "name": "Area 2", "value": 210, "percent": 21  }, 
+        { "name": "Area 3", "value": 150, "percent": 15  }, 
+        { "name": "Area 4", "value": 120, "percent": 12  }, 
+        { "name": "Area 5", "value": 100, "percent": 10  }
+    ], 
+
+    "top_hunters": {
+        "labels":       ["Hunter 1", "Hunter 2", "Hunter 3", "Hunter 4", "Hunter 5", "Hunter 6" ], 
+        "values":       [ 800, 700, 600, 500, 400, 300]
+    }, 
+
+    "top_parts": {
+        "labels":       ["Part 1", "Part 2", "Part 3", "Part 4", "Part 5", "Part 6" ], 
+        "values":       [ 760, 570, 475, 380, 285, 190],
+        "percents":     [ 40, 20, 15, 10, 10, 5]
+    },
+    
+    "conservation_status_red_list": {
+        "labels":       ["LC", "NT", "EN", "VU", "Other" ], 
+        "values":       [ 760, 570, 475, 380, 285],
+        "percents":     [ 40, 20, 15, 10, 10]
+    },
+
+    "parket_price": [
+        {
+            "name": "Total", 
+            "period_total": 89.1,
+            "difference":   12,
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [60, 40, 90, 45, 70, 10, 80, 40, 50]
+        }, 
+        {
+            "name": "Average", 
+            "period_total": 89.1,
+            "difference":   -9,
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [110, 70, 50, 80, 100, 90, 120, 60, 20]
+        }, 
+        {
+            "name": "Kilo", 
+            "period_total": 89.1,
+            "difference":   0,
+            "dates": [ "Apr 2023", "May 2023", "Jun 2023", "Jul 2023", "Aug 2023", "Sep 2023", "Oct 2023", "Nov 2023", "Dec 2023" ], 
+            "values": [ 90, 100, 90, 80, 50, 60, 70, 80, 90 ]
+        }
+    ]
+    
+}

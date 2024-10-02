@@ -1,0 +1,157 @@
+@import './base.css';
+
+#app {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+#app.fullWidth{
+  width: 100%;
+  max-width: 100%;
+}
+
+a,
+.green {
+  text-decoration: none;
+  /* color: hsla(160, 100%, 37%, 1); */
+  transition: 0.4s;
+  /* padding: 3px; */
+}
+
+@media (hover: hover) {
+  a:hover {
+    
+  }
+}
+
+
+
+/* 
+.rowList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  /* margin: 0 -1rem; */
+  /* background-color: #ffffff30; */
+  /* border: solid 1px #ff0000; */
+}
+
+.col {
+  flex: 1;
+  position: relative;
+  /* padding: 1rem; */
+  /* background-color: #ffccccf0; */
+  /* border: solid 1px #00ff00; */
+}
+
+.pod{
+  min-width: 400px;
+  height:400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--color-pod-bg);
+  padding: 20px;
+  border-radius: 20px;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+  .title{
+    text-transform: uppercase;
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-text)
+  }
+}
+
+.marketPod .pod{
+  min-width: 240px;
+}
+
+.pageTitle{
+  color: var(--color-pod-bg)
+}
+
+.headBar{
+  background-color: var(--control-bg);
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+  font-weight: bold;
+}
+
+
+.loading{
+  color: #2a6264;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  left: calc(50% - 100px);
+  text-align: center;
+}
+
+.orangeButton{
+  background-color: #E86E59;
+  color: var(--dropdown-font-color);
+  /* padding: 0px 30px !important; */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  justify-content: center;
+  padding: 10px 20px !important;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  z-index: 2;
+}
+
+.transparent{
+  opacity: 0;
+}
+
+
+#bigMap.mapInner{
+  min-width: revert;
+  height: 100%;
+}
+
+.plotly-notifier .notifier-note {
+  min-width: 180px;
+  max-width: 250px;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: solid 1px #334c4c50 !important;
+  border-radius: 5px !important;
+  z-index: 3000;
+  margin: 0px;
+  /* background-color: rgba(140, 151, 175, 0.9); */
+  background-color: #5b9b9b !important;
+  /* color: rgb(255, 255, 255);
+  padding: 10px;
+  overflow-wrap: break-word;
+  hyphens: auto; */
+}
