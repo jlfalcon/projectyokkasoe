@@ -1,6 +1,8 @@
 name: Example workflow for S3 Deploy
 
-on: [push]
+on:
+  push:
+    branches: [develop, main]
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -17,10 +19,18 @@ jobs:
         - name: Build
           run: npm run build
 
-        - name: Deploy
+        - name: Deploy PROD
           uses: lbertenasco/s3-deploy@v1
           with:
             folder: dist
             bucket: ${{ secrets.S3_BUCKET }}
             dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+            invalidation: / *
+            
+        - name: Deploy STG
+          uses: lbertenasco/s3-deploy@v1
+          with:
+            folder: dist
+            bucket: ${{ secrets.STG_S3_BUCKET }}
+            dist-id: ${{ secrets.STG_CLOUDFRONT_DISTRIBUTION_ID }}
             invalidation: / *
